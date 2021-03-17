@@ -1,0 +1,52 @@
+1) Is your browser running HTTP version 1.0 or 1.1? What version of HTTP is the server running?
+- Both browser and server are running 1.1
+
+2) What languages (if any) does your browser indicate that it can accpet to the server?
+- Accept-Language: en-US,en;q=0.9
+
+3) What is the IP address of your computer? Or if the gaia.cs.umass.edu server?
+- 128.119.245.12 is my IP address(this will be different for my groupmates)
+- 192.168.1.74 is the gaia.cs.umass.edu servers IP address
+
+4) What is that status code returned from the server to your browser?
+-    200 - OK
+
+5) When was the HTML file that you are retrieving last modified at the server?
+- Mon, 06 Feb 2017 6:59:01GMT\r\n
+
+6) How many bytes of content are being returned to your browser?
+- Content length: 371\r\n
+
+7) By inspecting the raw data in the packet content window, do you see any headers within the data that are not displayed in the 
+packet-listing window? If so, name one
+- No
+
+8) Inspect the contents of the first HTTP GET request from your browser to the server. Do you see an "IF-MODIFIED-SINCE" line in the HTTP get?
+- No
+
+9) Inspect the contents of the server response. Did the server explicitly return the contents of the file? How can you tell?
+- Yes, one of the lines says "Line-based text data: text/html (10 lines)"
+- Opening this section reveals the contents of the file
+
+10) Now inspect the contents of the second HTTP GET request from your browser to the server. Do you see an "IF-MODIFIED-SINCE:" line 
+in the HTTP GET? If so, what information follows the "IF-MODIFIED-SINCE:" header?
+- It is there, followed by the last time i visited the site
+
+11) What is the HTTP satus code and phrase returned from the server in response to this second HTTP GET? Did the server explicitly return
+the content of the file? Explain.
+- Code 304 Not Modified. It did not explicitly return the contents of the file, because the file we have cached is up to date.
+
+12) How many HTTP GET request messages did your browser send? Which packet number in the trace contains the GET message for the bill or rigths?
+- Only one get request. Packet number 4895
+
+13) Which packet number in the trace contains the status code and phrase associated with the response to the HTTP GET request?
+- Packet number 4912
+
+14) What is the status code and phrase in the response?
+- Status Code 200 OK
+
+15) How many data-containing TCP segments were needed to carry the single HTTP response and the text of the Bill of Rights?
+- 4 Reassembled TCP segments
+
+
+
