@@ -60,7 +60,7 @@ while True:
         # TASK 7
         # Close client socket
         # Fill in start
-        connectionSocket.close()
+connectionSocket.close()
 serverSocket.close()
 # Fill in end
 sys.exit()  # Terminate the program after sending the corresponding data
